@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from 'react';
 const Hero = () => {
   const videoRef = useRef(null);
 
@@ -9,7 +9,7 @@ const Hero = () => {
       videoRef.current.play().catch((error) => {
         // Auto-play was prevented
         // You can handle this case here
-        console.error("Auto-play was prevented:", error);
+        console.error('Auto-play was prevented:', error);
       });
     }
   }, []);
@@ -32,17 +32,17 @@ const Hero = () => {
       </video>
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Your content */}
-        <div className="text-center text-white">
-          <h1 className="text-2xl md:text-7xl lg:text-8xl">
-            Where{" "}
-            <span className="font-bold text-3xl md:text-8xl lg:text-9xl text-[#F8BA18]">
+        <div className="text-center text-white px-3 md:px-6 lg:px-8 ">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl">
+            Where{' '}
+            <span className="text-3xl md:text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500">
               ideas
-            </span>{" "}
+            </span>{' '}
             transform into
           </h1>
-          <h1 className="text-2xl md:text-7xl lg:text-8xl">
-            digital{" "}
-            <span className="font-bold text-3xl md:text-8xl lg:text-9xl text-[#F8BA18]">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl">
+            digital{' '}
+            <span className="text-3xl md:text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500">
               experiences
             </span>
             .

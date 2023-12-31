@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 const Navbar = () => {
   return (
@@ -57,7 +57,7 @@ const Navbar = () => {
         <Link href="/">About</Link>
       </div>
       <div className="lg:text-xl text-lg text-white navbar-end">
-        <button className="bg-customBlue rounded-lg lg:px-8 px-4 lg:py-3 py-2">
+        <button className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg lg:px-8 px-4 lg:py-3 py-2">
           Contact Us
         </button>
       </div>
