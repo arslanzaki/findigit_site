@@ -25,13 +25,13 @@ const Navbar = () => {
           </div>
           <div
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-8 shadow text-white bg-[#F8BA18] rounded-box w-52 space-y-6"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-8 shadow text-[#00103A] bg-[#F8BA18] rounded-box w-52 space-y-6"
           >
             <Link href="/">Home</Link>
 
-            <Link href="/services">Services</Link>
+            <Link href="#services">Services</Link>
 
-            <Link href="/">Testimonials</Link>
+            <Link href="#testimonials">Testimonials</Link>
 
             <Link href="/">About</Link>
           </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
 
         <Link href="#services">Services</Link>
 
-        <Link href="/">Testimonials</Link>
+        <Link href="#testimonials">Testimonials</Link>
 
         <Link href="/">About</Link>
       </div>

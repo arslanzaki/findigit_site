@@ -7,16 +7,11 @@ const Hero = () => {
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch((error) => {
-        // Auto-play was prevented
-        // You can handle this case here
         console.error('Auto-play was prevented:', error);
       });
     }
   }, []);
   return (
-    // <div className="h-screen flex items-center justify-center">
-
-    // </div>
     <div className="relative w-full h-screen overflow-hidden z-[-1]">
       <video
         ref={videoRef}
