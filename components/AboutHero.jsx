@@ -1,7 +1,8 @@
 'use client';
 
+import { ChevronDown } from 'lucide-react';
 import React, { useEffect, useRef } from 'react';
-const Hero = () => {
+const AboutHero = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -29,23 +30,13 @@ const Hero = () => {
         {/* Your content */}
         <div className="text-center text-white px-3 md:px-6 lg:px-8 ">
           <h1 className="text-3xl md:text-5xl lg:text-7xl">
-            Where{' '}
-            <span className="text-3xl md:text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500">
-              ideas
-            </span>{' '}
-            transform into
-          </h1>
-          <h1 className="text-3xl md:text-5xl lg:text-7xl">
-            digital{' '}
-            <span className="text-3xl md:text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500">
-              experiences
-            </span>
-            .
+            <span className=" text-stroke font-bold">About </span>
+            <span className="underline font-normal">FinDigit</span>
           </h1>
         </div>
         <div className="lg:text-xl text-lg text-white navbar-end">
-          <button className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg lg:px-8 px-4 lg:py-3 py-2">
-            Contact Us
+          <button className="bg-white px-2 py-2 rounded-full">
+            <ChevronDown className="text-blue-500" />
           </button>
         </div>
       </div>
@@ -53,4 +44,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AboutHero;

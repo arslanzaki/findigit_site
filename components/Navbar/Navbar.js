@@ -1,3 +1,4 @@
+import { Globe } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -33,7 +34,7 @@ const Navbar = () => {
 
             <Link href="#testimonials">Testimonials</Link>
 
-            <Link href="/">About</Link>
+            <Link href="/about">About</Link>
           </div>
         </div>
         <Link href="/">
@@ -54,9 +55,10 @@ const Navbar = () => {
 
         <Link href="#testimonials">Testimonials</Link>
 
-        <Link href="/">About</Link>
+        <Link href="/about">About</Link>
       </div>
       <div className="lg:text-xl text-lg text-white navbar-end">
+        <Globe size={24} color="#fff" className="mr-4" />
         <button className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg lg:px-8 px-4 lg:py-3 py-2">
           Contact Us
         </button>
